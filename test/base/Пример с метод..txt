@@ -1,0 +1,19 @@
+s(h, a).
+s(f, b).
+s(g, d).
+s(P, L).
+s(Q, N).
+s(T, R).
+m(h, d).
+m(f, b).
+m(g, a).
+m(T, R).
+P(a, d).
+P(a, b).
+Q(b, c).
+Q(b, d).
+N(f, g).
+L(h, f).
+L(h, g).
+T(X, Y) <- P(X, Z); Q(Z,Y).
+T(Y, Y) <- R(Y,Y).

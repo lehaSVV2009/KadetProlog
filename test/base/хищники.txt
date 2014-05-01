@@ -1,0 +1,20 @@
+PREDATOR(lion).
+PREDATOR(tiger).
+PREDATOR(cheetah).
+HERBIVOROUS(hare).
+HERBIVOROUS(bison).
+HERBIVOROUS(deer).
+FRIEND(lion, cheetah).
+FRIEND(cheetah, lion).
+FRIEND(bison, deer).
+FRIEND(deer, bison).
+EAT(lion , meat).
+EAT(tiger , meat).
+EAT(hare , grass).
+EAT(bison, grass).
+like(PREDATOR, HERBIVOROUS).
+like(FRIEND, FRIEND).
+like(lion, bison).
+like(cheetah, deer).
+
+EAT(X, M)<- PREDATOR(X);PREDATOR(Z);FRIEND(X, Z);EAT(Z, M).
